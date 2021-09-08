@@ -1,0 +1,26 @@
+.divSignUpContainer {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+}
+
+.signUpContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+label {
+  text-align: center;
+  font-size: 20px;
+}
+
+input {
+  margin: 0 0 7px 0;
+  height: 20px;
+}
+
+button {
+  font-size: 20px;
+}
