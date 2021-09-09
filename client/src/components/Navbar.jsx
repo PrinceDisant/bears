@@ -1,12 +1,18 @@
-import React from 'react';
-import './navbar.css'
+import React from "react";
+import store from "../store";
+import "./navbar.css";
 
 function Navbar() {
-    return (
-        <div className="navbar-wrapper">
-            
-        </div>
-    )
+  function increment() {
+    store.dispatch({ type: "counter/increment" });
+  }
+
+  return (
+    <div className="navbar-wrapper">
+      <div></div>
+      <button onClick={increment()}>+ 1</button>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
