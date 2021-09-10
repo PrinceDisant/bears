@@ -1,4 +1,8 @@
-function reducer(state, action) {
+const initialState = {
+  value: 0,
+};
+
+function reducer(state = initialState, action) {
   // Reducers usually look at the type of action that happened
   // to decide how to update the state
   switch (action.type) {
